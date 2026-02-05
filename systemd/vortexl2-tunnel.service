@@ -1,0 +1,10 @@
+[Unit]
+Description=GodTunnel Service
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/godtunnel
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
